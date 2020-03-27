@@ -5,6 +5,7 @@
     <div *ngIf='editingPost != post; else postEdit'>
     <h1 [innerHTML]='post.title.rendered'></h1>
     <p [innerHTML]='post.content.rendered'></p>
+    <p [innerHTML]='post._links.rendered'></p>
     <button *ngIf='token' (click)='deletePost(post.id, $index)'>Delete</button>
     <button *ngIf='token' (click)='updatePost(post)'>Edit</button>
     <hr>

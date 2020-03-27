@@ -13,7 +13,8 @@ export class PostEditComponent implements OnInit {
   @Output() finish = new EventEmitter<void>();
   post_edit = {
     title: '',
-    content: ''
+    content: '',
+    _links: ''
   }
 
   constructor(private wpApiPosts: WpApiPosts) { 
@@ -22,6 +23,7 @@ export class PostEditComponent implements OnInit {
   ngOnInit() {
     this.post_edit['title'] = this.post.title.rendered;
     this.post_edit['content'] = this.post.content.rendered;
+    this.post_edit['_links'] = this.post._links.rendered;
   }
 
   updatePost() {

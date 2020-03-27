@@ -11,6 +11,11 @@
         <textarea class="form-control" id="content" required [(ngModel)]='post_edit.content' name='content'></textarea>
       </div>
 
+      <div class="form-group">
+        <label for="_links">Post _links</label>
+        <textarea class="form-control" id="_links" required [(ngModel)]='post_edit._links' name='_links'></textarea>
+      </div>
+
       <button type="submit" class="btn btn-success">Submit</button>
     </form>
 </div>
