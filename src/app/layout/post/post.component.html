@@ -5,7 +5,7 @@
     <ng-template class="featured" #mydefault>
         <div class="featured-img">
             <img src="assets/img/book.jpg" alt="">
-        </div>        
+        </div>
     </ng-template>
     <div class="post-body">
         <div class="data1">
@@ -22,12 +22,12 @@
         </div>
         <div class="post-text">
               <!-- <div [innerHTML]="( post.excerpt.rendered | slice: 0:150 )+'...'"></div>  -->
-              <div [innerHTML]="( post.excerpt.rendered | truncate:[150] )"></div> 
+              <div [innerHTML]="( post.excerpt.rendered | truncate:[150] )"></div>
         </div>
         <div class="read-more">
-            <a [routerLink]="['/post/', post.id]">read more</a>
+            <a [routerLink]="['/post/', post.id]">Click   here to read more</a>
         </div>
     </div>
-    
+
 </div>
 
